@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trains y'all</title>
+    <link rel="icon" href="" type="image/gif">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="assets/javascript/moment.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h1 class="display-4">Trains</h1>
+        <p class="lead"></p>
+    </div>
+
+    <div class="panel panel-primary">
+        <h3 class="panel-title">Add a train to the schedule</h3>
+    </div>    
+
+    <div class="panel-body">
+        
+        <form>
+
+            <div class="form-group">
+                <label>Train name</label>
+                <input type="text" class="form-control" id="train">
+            </div>
+
+            <div class="form-group">
+                <label>Destination city</label>
+                <input type="text" class="form-control" id="city">
+            </div>
+
+            <div class="form-group">
+                <label>First train time - hh:mm</label>
+                <input type="text" class="form-control" id="first-leaves">
+            </div>
+
+            <div class="form-group">
+                <label>Leaves every - in minutes</label>
+                <input type="text" class="form-control" id="leaves-every">
+            </div>
+
+            <button type="submit" class="btn btn-secondary" id="add-button">Add train</button>
+
+        </form>
+    </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+
+                    <table class="table table-hover" id="train-sched">
+                        <thead>
+                            <tr>
+                                <th>Train name</th>
+                                <th>Destination</th>
+                                <th>Leaves every - in minutes</th>
+                                <th>Next arrival</th>
+                                <th>Minutes away</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/javascript/train.js"></script>
+    
+</body>
+
+</html>

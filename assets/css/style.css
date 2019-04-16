@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.jumbotron {
+    background-color: #f7d2be;
+}
+
+.panel-title {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+.btn-secondary {
+    background-color: #f7d2be;
+    border-color: #f7d2be;
+    color: black;
+}
+
+thead {
+    background-color: #f5d9c9;
+}
+
+
