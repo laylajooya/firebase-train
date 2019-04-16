@@ -1,6 +1,8 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -17,9 +19,14 @@ body {
     padding: 20px;
 }
 
-.btn-primary {
+.btn-secondary {
     background-color: #f7d2be;
     border-color: #f7d2be;
     color: black;
 }
+
+thead {
+    background-color: #f5d9c9;
+}
+
 
